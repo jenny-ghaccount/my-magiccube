@@ -36,9 +36,10 @@ The app validates the cube state, computes a solution using a client-side solver
 
 ## Scope (MVP)
 - React + Next.js (App Router) + MUI UI.
+- **LEGO-inspired design**: Bold, colorful, playful aesthetic (see design.md).
 - Manual color entry for six faces via interactive 3×3 grids.
 - Cube state validation (counts per color, basic sanity checks).
-- Client-side solving using Kociemba/min2phase or an equivalent solver.
+- Client-side solving using **cubing.js** (Kociemba two-phase algorithm).
 - Display of solution steps in Singmaster notation.
 - Optional image upload for reference in MVP (no sampling yet).
 - Responsive UI and basic accessibility.
@@ -66,8 +67,9 @@ The app validates the cube state, computes a solution using a client-side solver
 
 ## Technical Requirements
 - Framework: Next.js (App Router), React, MUI.
+- Design System: LEGO-inspired theme (see design.md for full specification).
 - Client-only computation (no backend).
-- Solver: min2phase (Kociemba) or cubing.js; dynamic import to avoid SSR issues.
+- Solver: **cubing.js** (Kociemba two-phase algorithm); dynamic import to avoid SSR issues.
 - State building: 54-character URFDLB string from six face grids using a fixed mapping:
   - W → U, Y → D, R → R, O → L, G → F, B → B.
 - Validation:

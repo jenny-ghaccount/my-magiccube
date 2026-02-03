@@ -3,10 +3,12 @@
 ## Phase 1: Project Setup
 - [ ] Initialize Next.js project with App Router
 - [ ] Install and configure MUI (Material-UI)
+- [ ] **Set up LEGO-inspired MUI theme** (see design.md)
+- [ ] Install fonts: Nunito / Fredoka One
 - [ ] Set up project folder structure (`/app`, `/components`, `/lib`, `/utils`)
 - [ ] Configure TypeScript (recommended)
 - [ ] Set up ESLint and Prettier
-- [ ] Create basic layout component with header/footer
+- [ ] Create basic layout component with header/footer (LEGO red header)
 
 ## Phase 2: Core UI Components
 - [ ] Create Stepper component for the 3-step flow
@@ -36,10 +38,9 @@
 - [ ] Block solve button until validation passes
 
 ## Phase 5: Solver Integration
-- [ ] Research and select solver library (min2phase / cubing.js)
-- [ ] Install solver package
+- [ ] Install **cubing.js** solver package (`npm install cubing`)
 - [ ] Set up dynamic import to avoid SSR issues
-- [ ] Create solver wrapper function
+- [ ] Create solver wrapper function using Kociemba two-phase algorithm
 - [ ] Handle solver errors gracefully
 - [ ] Test with known cube states
 
@@ -126,3 +127,5 @@ npm install cubing
 - All processing is client-side (no backend)
 - Privacy-first: no image uploads to servers
 - Target: Modern browsers (last 2 versions)
+- **Solver**: cubing.js (Kociemba two-phase algorithm)
+- **Design**: LEGO-inspired theme (see design.md)
